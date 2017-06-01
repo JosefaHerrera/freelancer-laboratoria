@@ -81,16 +81,16 @@
     validarCorreo();
 
 //validar Telefono
-function validarPhone(){
-	var num=document.getElementById("phone").value;
-	if(num.length!=9){
-		alert("Debe ingresar un número celular de 9 dígitos");
-	}else{
-		var text=document.getElementById("phone");
-		alert("Numero ingresado");
-	}
-};
-validarPhone();
+	function validarPhone(){
+		var num=document.getElementById("phone").value;
+		if(num.length!=9){
+			alert("Debe ingresar un número celular de 9 dígitos");
+		}else{
+			var text=document.getElementById("phone");
+			alert("Numero ingresado");
+		}
+	};
+	validarPhone();
 
 
 
