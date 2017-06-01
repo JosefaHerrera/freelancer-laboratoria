@@ -1,15 +1,183 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8">
-	<title>Freelancer</title>
-	<!-- Enlaza aquí tu CSS común y de tu proyecto -->
+    <meta charset="UTF-8">
+    <title>Freelancer</title>
+    <script src="https://use.fontawesome.com/8f683cd035.js"></script>
+    <!-- 	FUENTE RALEWAY DE GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+    <!-- Enlaza aquí tu CSS común y de tu proyecto -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body>
-	<!-- Escribe tu código aquí -->
 
-	<!-- Enlaza aquí tu archivo JS -->
-	
+<body>
+    <!-- Escribe tu código aquí -->
+
+    <!-- SECTION MENU -->
+    <header class="menu">
+        <div class="izquierda-menu">
+            <h2>START BOOTSTRAP</h2>
+        </div>
+        <!--LINKS-->
+        <div class="derecha-menu">
+            <ul>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- SECTION HOME -->
+    <section id="home">
+        <div class="row">
+            <div class="col-12 img-home">
+                <img src="assets/images/profile.png" alt="profile">
+                <h1>START BOOTSTRAP</h1>
+                <div class="linea-izq"></div>
+                <p><i class="fa fa-star star-white" aria-hidden="true"></i></p>
+                <div class="linea-der"></div>
+                <h3>Web Developer - Graphic Artist - Use Experience Designer</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FORTFOLIO -->
+    <section id="portafolio">
+        <div class="container">
+            <h2 class="titulo-port">PORTFOLIO</h2>
+            <div class="linea-izq-negro"></div>
+            <p><i class="fa fa-star start-black" aria-hidden="true"></i></p>
+            <div class="linea-der-negro"></div>
+
+            <!-- 1º fila -->
+            <div class="row">
+                <div class="col-4 ">
+                    <img src="assets/images/portfolio/cabin.png" alt="casa" class="img-responsive">
+                </div>
+                <div class="col-4">
+                    <img src="assets/images/portfolio/cake.png" alt="pastel" class="img-responsive">
+                </div>
+                <div class="col-4">
+                    <img src="assets/images/portfolio/circus.png" alt="Circo" class="img-responsive">
+                </div>
+            </div>
+
+            <!-- 2º fila -->
+            <div class="row">
+                <div class="col-4">
+                    <img src="assets/images/portfolio/game.png" alt="juego" class="img-responsive">
+                </div>
+                <div class="col-4">
+                    <img src="assets/images/portfolio/safe.png" alt="cajafuerte" class="img-responsive">
+                </div>
+                <div class="col-4">
+                    <img src="assets/images/portfolio/submarine.png" alt="Submarino" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION ABOUT -->
+    <section id="about">
+        <div class="row">
+        <!--COL-12-->
+            <div class="col-12 section-about">
+                <h2 class="titulo-about">ABOUT</h2>
+                <div class="linea-izq"></div>
+                <p>
+                    <i class="fa fa-star star-white" aria-hidden="true"></i>
+                </p>
+                <div class="linea-der"></div>
+
+                <div class="row">
+                <!-- COL-3-->
+                    <div class="col-3"></div>
+                    <div class="col-3 texto-about">
+                        Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheet for easy customization.
+                    </div>
+                    <div class="col-3 texto-about">
+                        Whether you're a student looking to showcase you work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+
+                <button type="button" class="button"><i class="fa fa-download" aria-hidden="true"></i> Download Theme</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT ME -->
+    <section id="contact-me">
+        <div class="row">
+        <!-- COL-12-->
+            <div class="col-12">
+                <h2 class="titulo-contact">CONTACT ME</h2>
+
+                <p><i class="fa fa-star start-black" aria-hidden="true"></i></p>
+
+                <form>
+                    <input class="texto-input" type="text" placeholder="Name"><br>
+                    <input class="texto-input" type="text" placeholder="Email Address"><br>
+                    <input class="texto-input" type="text" placeholder="Phone Number"><br>
+                    <textarea rows="" cols="" placeholder="Message"></textarea><br>
+                    <button type="button" class="button-contacto">Send</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FOOTER-->
+    <section id="footer">
+        <div class="row">
+        <!--COL-4-->
+            <div class="col-4">
+                <h3>LOCATION</h3>
+                <p class="about-freelancer">3481 Melrose Place</p>
+                <p class="about-freelancer">Beverly Hilss, CA 90210</p>
+            </div>
+            <div class="col-4">
+                <h3>AROUND THE WEB</h3>
+                <i class="icon fa fa-facebook" aria-hidden="true"></i>
+                <i class="icon fa fa-google-plus" aria-hidden="true"></i>
+                <i class="icon fa fa-twitter" aria-hidden="true"></i>
+                <i class="icon fa fa-linkedin" aria-hidden="true"></i>
+
+            </div>
+            <div class="col-4">
+                <h3>ABOUT FREELANCER</h3>
+                <p class="aboutFreelancer">Freelance is a free to use, open source Bootstrap theme created by <span class="start">Start Bootstrap</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h5>Copyright © Your Website 2016</h5>
+
+    </footer>
+
+	<!--MODAL-->
+    <div id="col-4-modal" class="hide">
+        <div class="modal-body">
+            <!--Acá va la info dinamica con JS-->
+            <div class="close">
+            	<i class="fa fa-times-circle-o" aria-hidden="true"></i>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Enlaza aquí tu archivo JS -->
+    <script type="text/javascript" src="js/app.js"></script>
+
 </body>
+
 </html>
