@@ -296,7 +296,13 @@ color:black;
   margin: 0 auto;
   text-align: center;
   padding: 100px;
+  position: relative;
+  top: 76px;
 
 }
-
+.title{
+    text-align: center;
+    position: relative;
+    bottom:587px;
+}
 

@@ -26,8 +26,25 @@
             img = document.createElement('img');
             img.setAttribute('src', 'http://tojaeurope.com/gallery/Close-icon.png');
 
+            
+            title = document.createElement("h2");
+                title.setAttribute("class", "title");
+            text = document.createTextNode("PROYECT TITLE");
+            
+
+            
+            
+            
+
+
+            bodyModal.appendChild(title);
+            
+
+
+            title.appendChild(text);
             close.appendChild(img);
             modal.appendChild(close);
+
 
             close.addEventListener('click', function() {
                 modal.classList.add('hide');
