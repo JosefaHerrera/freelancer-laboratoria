@@ -26,24 +26,15 @@
             img = document.createElement('img');
             img.setAttribute('src', 'http://tojaeurope.com/gallery/Close-icon.png');
 
-            
+            /*PROYECT TITLE */
             title = document.createElement("h2");
-                title.setAttribute("class", "title");
+            title.setAttribute("class", "title");
             text = document.createTextNode("PROYECT TITLE");
-            
+            bodyModal.appendChild(title);//ETIQUETA
 
-            
-            
-            
-
-
-            bodyModal.appendChild(title);
-            
-
-
-            title.appendChild(text);
-            close.appendChild(img);
-            modal.appendChild(close);
+            title.appendChild(text);//TEXTO A MOSTRAR
+            close.appendChild(img);//IMAGEN A MOSTRAR FOREACH
+            modal.appendChild(close);//CONTENEDOR
 
 
             close.addEventListener('click', function() {
@@ -53,7 +44,7 @@
         });
     });
 
-    var close = document.querySelector('#box-services-modal .close');
+    var close = document.querySelector('#col-4-modal .close');
     close.addEventListener('click', function() {
         modal.classList.add('hide');
     });
@@ -64,8 +55,23 @@
 
 
 /********VALIDACIONES*********/
+/*
+var boton = document.getElementById('enviar');
+boton.addEventListener('click', validar);
+
+function validar() {
+    // Obtener lo  que el usuario coloco, y guardarlo con el value
+    var name = document.getElementById('nombrecito').value;
+    var email = document.getElementById('email').value;
+    var phone = document.getElementById('phone').value;
+    var textarea = document.getElementById('textarea').value;
+
+*/
 
 
+
+
+/*
 //validar nombre
 		function validarNombre(){
 		var nombre = document.getElementById('nombrecito').value; //valor ingresado al input en el id='name'
@@ -107,7 +113,7 @@
 			alert("Numero ingresado");
 		}
 	};
-	validarPhone();
+	validarPhone();*/
 
 
 
