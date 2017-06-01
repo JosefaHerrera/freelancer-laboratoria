@@ -84,7 +84,8 @@ ul li a {
 li:hover {
     background-color: #18ba9a;
     color: whitesmoke;
-    height: 30px;
+    /* height: 30px; */
+    padding: 21px;
 }
 
 
